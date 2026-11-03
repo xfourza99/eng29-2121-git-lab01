@@ -5,4 +5,8 @@ def analyze_dc(voltage_v, resistance_ohm):
 
 
 if __name__ == "__main__":
-    print(analyze_dc(12, 6))
+    voltage_v = float(input("Enter voltage (V): "))
+    resistance_ohm = float(input("Enter resistance (ohm): "))
+    result = analyze_dc(voltage_v, resistance_ohm)
+    print(f"Current: {result['current_a']} A")
+    print(f"Power: {result['power_w']} W")
